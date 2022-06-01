@@ -11,3 +11,76 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.watchCard{
+  margin-bottom: 66px;
+  margin-right: 50px;
+}
+
+.loginForm{
+  margin-left: 0px;
+  width: 30%;
+  margin-left: 38%;
+  padding: 40px;
+  background-color: #BBDED6;
+  border-radius: 10px;
+}
+
+.productForm{
+  margin-left: 0px;
+  width: 40%;
+  margin-left: 35%;
+  padding: 40px;
+  background-color: #F9ED69;
+  border-radius: 10px;
+}
+
+.productBtn{
+  margin-left: 40%;
+margin-top: 5%;
+}
+
+.loginBtn{
+  margin-left: 36%;
+  margin-top: 5%;
+}
+
+.jumbotron{
+   background-color: #FFC7C7;
+   padding : 1%;
+}
+
+.navbar{
+  height: 65px;
+}
+
+.nav-menu{
+  position: absolute;
+    right: 150px;
+}
+
+.nav-item{
+  padding:5%;
+  text-decoration: none;
+  color: #DC143C;
+  font-size: 20px;
+    font-weight: 400;
+}
+
+.navHead{
+  top: 7px;
+  position: absolute;
+}
+
+img{
+  width: 200px;
+  height: 300px;
+}
+
+figure{
+  margin: 0 auto;
+}
+
+.cartCard{
+  margin-bottom: 20px;
+}

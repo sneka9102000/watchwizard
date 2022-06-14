@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { addUser } from '../redux/action';
+import { addUser } from '../Store/action';
 import { Redirect, useHistory } from "react-router-dom";
 
 function Register() {

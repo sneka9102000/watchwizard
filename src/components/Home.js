@@ -12,6 +12,7 @@ export default class Home extends Component {
       user: null,
       cart: {},
       products: [],
+      role: '',
     };
     this.routerRef = React.createRef();
   }
@@ -25,6 +26,19 @@ export default class Home extends Component {
     cart = cart ? JSON.parse(cart) : {};
 
     this.setState({ user, products: products.data, cart });
+
+    if(this.state.user) {
+      if(this.state.user.accessLevel < 1) {
+        this.setState({
+          role: "admin"
+        })
+      }
+      else {
+        this.setState({
+          role: "user"
+        })
+      }
+    }
   }
 
   login = async (email, password) => {
@@ -95,6 +109,23 @@ export default class Home extends Component {
       return;
     }
 
+    const isRole = () => {
+      if(this.state.user) {
+        if(this.state.user.email === " admin@example.com") {
+          this.setState({
+            role: "admin"
+          })
+        }
+        else {
+          this.setState({
+            role: "user"
+          })
+        }
+      }
+    }
+
+    isRole()
+
     const cart = this.state.cart;
 
     const products = this.state.products.map((p) => {
@@ -111,6 +142,11 @@ export default class Home extends Component {
   };
 
   render() {
+
+    console.log("user : ", this.state.user)
+    console.log("Email:",this.state.user && this.state.user.email)
+    console.log("role:", this.state.role)
+
     return (
       <Context.Provider
         value={{
@@ -151,7 +187,7 @@ export default class Home extends Component {
                 </label>
               </div>
               <div
-                className={`nav-menu ${this.state.showMenu ? "is-active" : ""}`}
+                className={`nav-menu ${this.state.showMenu ? "is-active" : ""} col-sm-6 `}
               >
                 <Link to="/products" className="nav-item">
                   Products
@@ -161,12 +197,16 @@ export default class Home extends Component {
                     Add Items
                   </Link>
                 )}
-                <Link to="/cart" className="nav-item">
-                  Cart 
-                  <span className="tag is-primary">
-                    {Object.keys(this.state.cart).length}
-                  </span>
-                </Link>
+                {
+                  this.state.role === "user" &&  (
+                  <Link to="/cart" className="nav-item">
+                  <i class="fa fa-shopping-cart " aria-hidden="true"></i> 
+                    <sup className="tag">
+                      {Object.keys(this.state.cart).length}
+                    </sup>
+                  </Link>
+                  )
+                }
                 {!this.state.user ? (
                   <Link to="/login" className="nav-item">
                     Login
@@ -185,3 +225,4 @@ export default class Home extends Component {
     );
   }
 }
+

@@ -54,12 +54,21 @@ margin-top: 5%;
   height: 65px;
 }
 
+.tag {
+  background-color: #DC143C;
+  color: #BBDED6;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
 .nav-menu{
   position: absolute;
-    right: 150px;
+  right: 0;
+  left: 60%;
 }
 
 .nav-item{
+  display: inline;
   padding:5%;
   text-decoration: none;
   color: #DC143C;

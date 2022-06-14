@@ -1,0 +1,112 @@
+{
+  "users": [
+    {
+      "email": "regular@example.com",
+      "password": "$2a$10$2myKMolZJoH.q.cyXClQXufY1Mc7ETKdSaQQCC6Fgtbe0DCXRBELG",
+      "id": 1
+    },
+    {
+      "email": "admin@example.com",
+      "password": "$2a$10$w8qB40MdYkMs3dgGGf0Pu.xxVOOzWdZ5/Nrkleo3Gqc88PF/OQhOG",
+      "id": 2
+    },
+    {
+      "email": "sneka9p@gmail.com",
+      "password": "$2a$10$Z8NNE1.OUpjRUGbULv4.HOtJ2j5bR/OJsuwQeRUiQWFI2.Tnnj0Sq",
+      "id": 3
+    },
+    {
+      "email": "kmrannithvikram451@gmail.com",
+      "password": "$2a$10$O..JMgP1XXVLPeSDUXuQ/.G4pDPVXxNFn6Mg4iDyk08KZx820FyNC",
+      "id": 4
+    },
+    {
+      "email": "rannith@gmail.com",
+      "password": "$2a$10$9ijVJ.69LWEwuGWb5odoNu/UBGBWZpY3j6PsFApNYnPUj.bJA0LIG",
+      "id": 5
+    },
+    {
+      "email": "snekakumar925@gmail.com",
+      "password": "$2a$10$iO3/1h6Ol4BKOpsbdna/U.jmf9M/LNpGR1X08HP7tgsxoD3i4WMyi",
+      "firstname": "sne",
+      "lastname": "kumar",
+      "mobilenumber": "8903464826",
+      "address": "type 2 ,camp 1 ,thermal nagar",
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "id": "hdmdu0t80yjkfqselfc",
+      "name": "Titan",
+      "stock": 99,
+      "price": 399.99,
+      "shortDesc": "Titan Smart Touch Screen Watch.",
+      "description": "Titan Smart Touch Screen Watch with SPO2, Heart Rate Monitor, 14 days Battery Life, Women's Health tracking",
+      "image": "https://m.media-amazon.com/images/I/81+d6eSA0eL._UY445_.jpg"
+    },
+    {
+      "id": "3dc7fiyzlfmkfqseqam",
+      "name": "Sonata",
+      "stock": 149,
+      "price": 300,
+      "shortDesc": "Sleek Black Dial Leather Strap Watch.",
+      "description": "Sonata Sleek Black Dial Analog Watch for Men with Date Function ",
+      "image": "https://m.media-amazon.com/images/I/61w9ISMyhiL._UY445_.jpg"
+    },
+    {
+      "id": "aoe8wvdxvrkfqsew67",
+      "name": "FastTrack",
+      "stock": 149,
+      "price": 175,
+      "shortDesc": "Stunners 3.0 Metal Silver Disc Watch",
+      "description": "Fastrack Silver Dial Analog Watch for Guys",
+      "image": "https://m.media-amazon.com/images/I/81ilEowdtZL._UY445_.jpg"
+    },
+    {
+      "id": "bmfrurdkswtkfqsf15j",
+      "name": "Fossil",
+      "stock": 75,
+      "price": 109.99,
+      "shortDesc": "Women's stylish coloured strap watch",
+      "description": "Gives you the ethnic elegant feel no matter what your outfit is.",
+      "image": "https://i.pinimg.com/originals/15/fb/51/15fb518bccdacf6d7e209b111751d127.jpg"
+    },
+    {
+      "id": "wxslip53lf8l3o7d543",
+      "name": "Daniel Wellington",
+      "price": "542",
+      "stock": "54",
+      "shortDesc": "Daniel Wellington Gold plated Classic vintage watch.",
+      "description": "The classic bracelet was designed to be  a true celebration of craftsmanship. With its usual tasteful and allure designs and models",
+      "image": "https://m.media-amazon.com/images/I/81LQzGUPuFL._AC_UL1500_.jpg"
+    },
+    {
+      "id": "pfmvu64qpjl3p9r6nf",
+      "name": "Emperio",
+      "price": "450",
+      "stock": "65",
+      "shortDesc": "Emperio Armani Chronography Brown Silicone Men's Watch",
+      "description": "Portable Piece of Fashion Accessory. Keeps track of time.",
+      "image": "https://m.media-amazon.com/images/I/81u-QAhCQ6S._UX569_.jpg"
+    },
+    {
+      "id": "yzcgts502wjl3p9tpux",
+      "name": "Timex ",
+      "price": "350",
+      "stock": "142",
+      "shortDesc": "Timex Green Dial Women's Watch",
+      "description": "Brass Case materials with gunmetal strap",
+      "image": "https://m.media-amazon.com/images/I/81p3UEtsTJL._UL1500_.jpg"
+    },
+    {
+      "id": "p3dnuq3e0vol3p9wj0s",
+      "name": "FireBolt 360",
+      "price": "250",
+      "stock": "175",
+      "shortDesc": "Smart Watch for women with rotating bezel.",
+      "description": "HD display with SpO2 monitoring,24*7 HR monitoring.",
+      "image": "https://m.media-amazon.com/images/I/61ZY43i5xAL._SX679_.jpg"
+    }
+  ]
+}

@@ -7,13 +7,17 @@ function Register() {
 
     const [state, setState] = useState({
         email: "",
-        password: ""
+        password: "",
+        firstname: "",
+        lastname: "",
+        mobilenumber: "",
+        address:""
     });
 
     let dispatch = useDispatch();
     let history = useHistory()
     
-    const { email, password } = state;
+    const { email, password,firstname,lastname,mobilenumber,address } = state;
     const handleChange = (e) => {
         let { name, value } = e.target;
         setState({ ...state, [name]: value });
@@ -59,6 +63,42 @@ function Register() {
                                 className="input form-control input-control"
                                 type="password"
                                 name="password"
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div className="field">
+                            <label className="label">firstname: </label>
+                            <input
+                                className="input form-control input-control"
+                                type="firstname"
+                                name="firstname"
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div className="field">
+                            <label className="label">lastname: </label>
+                            <input
+                                className="input form-control input-control"
+                                type="lastname"
+                                name="lastname"
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div className="field">
+                            <label className="label">mobilenumber: </label>
+                            <input
+                                className="input form-control input-control"
+                                type="mobilenumber"
+                                name="mobilenumber"
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div className="field">
+                            <label className="label">address: </label>
+                            <input
+                                className="input form-control input-control"
+                                type="address"
+                                name="address"
                                 onChange={handleChange}
                             />
                         </div>

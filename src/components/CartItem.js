@@ -16,7 +16,7 @@ const CartItem = (props) => {
           <b style={{ textTransform: "capitalize" }}>
             {product.name}{" "}
             <button type="button" class="btn btn-warning disabled">
-              Rs.{product.price}
+              $ {product.price}
             </button>
           </b>
           <div>{product.shortDesc}</div>

@@ -158,11 +158,11 @@ export default class Home extends Component {
                 </Link>
                 {this.state.user && this.state.user.accessLevel < 1 && (
                   <Link to="/add-product" className="nav-item">
-                    Add_Item
+                    Add Items
                   </Link>
                 )}
                 <Link to="/cart" className="nav-item">
-                  Cart_
+                  Cart 
                   <span className="tag is-primary">
                     {Object.keys(this.state.cart).length}
                   </span>

@@ -52,7 +52,7 @@ const Cart = (props) => {
             ) : (
               <div className="column">
                 <div className="title has-text-grey-light">
-                  No items in cart!
+                  Your order has been Placed successfully
                 </div>
               </div>
             )}
